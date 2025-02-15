@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Why Cats Are Special in Islam</title>
+  <style>
+    /* Basic Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Body */
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: #e8f5e9; /* Light green background */
+      line-height: 1.6;
+      color: #1b5e20; /* Dark green text */
+      padding: 10px;
+      animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* Header */
+    header {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      animation: slideDown 1s ease-out;
+    }
+    @keyframes slideDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 5px;
+    }
+
+    /* Main Container */
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      animation: fadeIn 1s ease-in;
+    }
+
+    /* Content */
+    article {
+      margin-bottom: 20px;
+    }
+    h2 {
+      margin-bottom: 10px;
+      color: #2e7d32;
+    }
+    p {
+      margin-bottom: 15px;
+      font-size: 1.1em;
+    }
+
+    /* Images Section */
+    .images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 20px 0;
+    }
+    .images img {
+      max-width: 45%;
+      margin-bottom: 15px;
+      border: 3px dashed #4caf50;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+    .images img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Button */
+    button {
+      background-color: #2e7d32;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 10px;
+      font-size: 1em;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      animation: popIn 0.5s ease;
+    }
+    @keyframes popIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+    button:hover {
+      background-color: #1b5e20;
+      transform: scale(1.05);
+    }
+
+    /* Hidden Content */
+    .hidden-content {
+      display: none;
+      margin-top: 15px;
+      padding: 15px;
+      background: #c8e6c9; /* Light green */
+      border: 2px dashed #2e7d32;
+      border-radius: 10px;
+      font-size: 1.1em;
+      animation: fadeIn 0.5s ease;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #c8e6c9;
+      font-size: 0.9em;
+      border-radius: 10px;
+      margin-top: 20px;
+      animation: fadeIn 1s ease;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Why Cats Are So Special</h1>
+    <p>A Fun, Faith-Friendly Explanation!</p>
+  </header>
+  <main>
+    <article>
+      <h2>Salam, Little Animal Lover!</h2>
+      <p>
+        Did you know that cats hold a special place in many Muslim homes and hearts? 
+        In Islam, all animals deserve kindness and care, but cats are often 
+        welcomed as clean and gentle companions. Some stories even say 
+        that our beloved Prophet (peace be upon him) treated cats very kindly 
+        and taught us to do the same!
+      </p>
+
+      <div class="images">
+        <!-- Cartoon Cat from Openclipart (CC0/Public Domain) -->
+        <img 
+          src="https://openclipart.org/image/800px/336649" 
+          alt="Cartoon Cat Friend" 
+        />
+        <!-- Cute cat GIF (Giphy) -->
+        <img 
+          src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" 
+          alt="Cute Cat GIF" 
+        />
+      </div>
+
+      <p>
+        Cats are known for being graceful and curious. They love to explore quietly 
+        and find cozy spots for naps. They also keep themselves very clean, which 
+        many people appreciate—especially when they curl up to purr beside you.
+      </p>
+      <p>
+        While dogs can be wonderful friends too, cats might be a better fit for 
+        some families—especially if you enjoy a calm, low-maintenance pet. Plus, 
+        their playful antics can be fun to watch (and they won't bark at the neighbors!). 
+        The important thing is to show every animal respect, just like Islam teaches us.
+      </p>
+
+      <button id="toggleButton">Show a Special Fact!</button>
+
+      <div class="hidden-content" id="funFact">
+        <p>
+          <strong>Special Fact:</strong> Some Islamic scholars mention a story where 
+          the Prophet (peace be upon him) found a cat sleeping on his robe. 
+          Rather than disturb the cat, he gently cut around the sleeping area 
+          so the cat could rest peacefully. This reminds us that kindness 
+          to animals is a big part of our faith!
+        </p>
+        <!-- Another cat GIF -->
+        <img 
+          src="https://media.giphy.com/media/OmK8lulOMQ9XO/giphy.gif" 
+          alt="Cat Relaxing GIF" 
+          style="width:100%; border-radius: 10px;" 
+        />
+      </div>
+    </article>
+  </main>
+  <footer>
+    <p>&copy; 2025 Friendly Cat Facts. All rights reserved.</p>
+  </footer>
+  <script>
+    // JavaScript to toggle the hidden content
+    document.getElementById('toggleButton').addEventListener('click', function() {
+      var funFact = document.getElementById('funFact');
+      if (funFact.style.display === 'none' || funFact.style.display === '') {
+        funFact.style.display = 'block';
+        this.textContent = 'Hide the Special Fact!';
+      } else {
+        funFact.style.display = 'none';
+        this.textContent = 'Show a Special Fact!';
+      }
+    });
+  </script>
+</body>
+</html>
