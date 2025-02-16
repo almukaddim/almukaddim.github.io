@@ -1,207 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Why Cats Can Be So Lazy</title>
+  <meta charset="UTF-8">
+  <title>Why Cats Are Better Than Dogs</title>
   <style>
-    /* Basic Reset */
-    * {
-      box-sizing: border-box;
+    /* Basic styling */
+    body {
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-    }
-
-    /* Body */
-    body {
-      font-family: 'Comic Sans MS', cursive, sans-serif;
-      background-color: #fff3e0; /* Light orange background */
       line-height: 1.6;
-      color: #4e342e; /* Darker brownish-orange text */
-      padding: 10px;
-      animation: fadeIn 1s ease-in;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
+      color: #333;
+      background-color: #fafafa;
     }
 
-    /* Header */
     header {
-      background-color: #fb8c00; /* Vibrant orange header background */
+      background-color: #FFC107; /* Bright color to catch attention */
       color: #fff;
-      padding: 20px;
       text-align: center;
-      border-radius: 10px;
-      margin-bottom: 20px;
-      animation: slideDown 1s ease-out;
-    }
-    @keyframes slideDown {
-      from { transform: translateY(-50px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
-    header h1 {
-      font-size: 2.5em;
-      margin-bottom: 5px;
+      padding: 2rem 0;
     }
 
-    /* Main Container */
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
     main {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 20px;
-      background: #ffffff;
-      border-radius: 10px;
+      width: 90%;
+      max-width: 800px;
+      margin: 2rem auto;
+      background-color: #fff;
+      padding: 1rem 2rem;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      animation: fadeIn 1s ease-in;
+      border-radius: 5px;
     }
 
-    /* Content */
-    article {
-      margin-bottom: 20px;
-    }
     h2 {
-      margin-bottom: 10px;
-      color: #e65100; /* Deep orange for headings */
+      margin-top: 1.5rem;
+      color: #444;
     }
+
     p {
-      margin-bottom: 15px;
-      font-size: 1.1em;
+      margin-bottom: 1rem;
     }
 
-    /* Images Section */
-    .images {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      margin: 20px 0;
-    }
-    .images img {
-      max-width: 45%;
-      margin-bottom: 15px;
-      border: 3px dashed #fb8c00;
-      border-radius: 10px;
-      transition: transform 0.3s ease;
-    }
-    .images img:hover {
-      transform: scale(1.05);
+    ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
     }
 
-    /* Button */
-    button {
-      background-color: #e65100;
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      cursor: pointer;
-      border-radius: 10px;
-      font-size: 1em;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-      animation: popIn 0.5s ease;
-    }
-    @keyframes popIn {
-      from { transform: scale(0.8); opacity: 0; }
-      to { transform: scale(1); opacity: 1; }
-    }
-    button:hover {
-      background-color: #bf360c;
-      transform: scale(1.05);
+    .img-container, .gif-container {
+      text-align: center;
+      margin: 1.5rem 0;
     }
 
-    /* Hidden Content */
-    .hidden-content {
-      display: none;
-      margin-top: 15px;
-      padding: 15px;
-      background: #ffe0b2; /* Lighter orange background */
-      border: 2px dashed #e65100;
-      border-radius: 10px;
-      font-size: 1.1em;
-      animation: fadeIn 0.5s ease;
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
     }
 
-    /* Footer */
     footer {
       text-align: center;
-      padding: 10px;
-      background: #ffe0b2;
-      font-size: 0.9em;
-      border-radius: 10px;
-      margin-top: 20px;
-      animation: fadeIn 1s ease;
+      margin: 2rem 0;
+      color: #666;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Why Cats Can Be So Lazy</h1>
-    <p>A Fun Look at Our Furry Sleep Experts!</p>
+    <h1>Why Cats Are Better Than Dogs</h1>
   </header>
+
   <main>
-    <article>
-      <h2>Hello, Little Feline Fan!</h2>
-      <p>
-        Have you ever wondered why cats love to snooze all day long? Some cats can
-        sleep for 12 to 16 hours—or even more—every single day! That's almost like 
-        having a part-time job in napping.
-      </p>
+    <!-- Example GIF -->
+    <div class="gif-container">
+      <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" alt="Playful cat GIF">
+    </div>
 
-      <div class="images">
-        <!-- Cartoon Cat from Openclipart (CC0/Public Domain) -->
-        <img 
-          src="https://openclipart.org/image/800px/svg_to_png/336649/Cat-Outline.png" 
-          alt="Cartoon Lazy Cat" 
-        />
-        <!-- Another Lazy Cat GIF from Giphy -->
-        <img 
-          src="https://media.giphy.com/media/MWSRkVoNaC30A/giphy.gif" 
-          alt="Lazy Cat GIF" 
-        />
-      </div>
+    <section>
+      <p>Cats have earned a reputation as gentle, independent, and low-maintenance companions. While both cats and dogs can make great pets, here are a few reasons some people might prefer cats over dogs.</p>
+    </section>
 
-      <p>
-        Cats are natural hunters at night, so they often spend daytime dozing. 
-        They also love to lounge around in sunny spots—like little furry solar panels! 
-        People sometimes say cats are lazy, but they're really saving their energy 
-        for big bursts of playtime (especially when a toy mouse is around).
-      </p>
-      <p>
-        Not every cat is a sleepyhead—some are quite active! But many cats know 
-        how to relax better than any other pet. If they could talk, they'd probably say,
-        "Why stand when you can sit, and why sit when you can nap?"
-      </p>
+    <!-- Example Image -->
+    <div class="img-container">
+      <img src="https://via.placeholder.com/600x400?text=Cute+Cat" alt="Cute cat photo">
+    </div>
 
-      <button id="toggleButton">Show a Secret about Lazy Cats!</button>
+    <section>
+      <h2>1. Low Maintenance</h2>
+      <p>Cats usually take care of themselves when it comes to grooming, and they generally adapt well to living in smaller spaces. They also do not need to be taken outside for regular walks, making them convenient for people with busy schedules or limited outdoor access.</p>
+    </section>
 
-      <div class="hidden-content" id="funFact">
-        <p>
-          <strong>Did You Know?</strong> When cats sleep, they might appear lazy, 
-          but they stay partly alert. Their ears can pick up sounds even while snoozing, 
-          so they’re ready to jump up if something exciting happens—like a can opener!
-        </p>
-        <img 
-          src="https://media.giphy.com/media/l41lVzsyg4uN7EF3G/giphy.gif" 
-          alt="Surprised Cat GIF" 
-          style="width:100%; border-radius: 10px;"
-        />
-      </div>
-    </article>
+    <!-- Another Example GIF -->
+    <div class="gif-container">
+      <img src="https://media.giphy.com/media/13CoXDiaCcCoyk/giphy.gif" alt="Cat playing GIF">
+    </div>
+
+    <section>
+      <h2>2. Independence</h2>
+      <p>Cats are known for their independent nature. They can spend hours entertaining themselves, whether by napping in a cozy spot or playing with a favorite toy. This independence can be appealing for individuals who are not always home or who appreciate a pet with a more laid-back demeanor.</p>
+    </section>
+
+    <!-- Another Example Image -->
+    <div class="img-container">
+      <img src="https://via.placeholder.com/600x400?text=Another+Cat" alt="Another cute cat photo">
+    </div>
+
+    <section>
+      <h2>3. Quiet Companionship</h2>
+      <p>Cats are generally quieter than dogs, which means fewer noise disturbances. Most cats meow occasionally, but they are far less likely to bark or create loud noises. If you live in an apartment or have noise restrictions, a cat can be an ideal pet.</p>
+    </section>
+
+    <section>
+      <h2>4. Easy Litter Training</h2>
+      <p>Cats instinctively understand how to use a litter box, making house-training relatively straightforward. This saves owners time and effort in teaching proper bathroom habits.</p>
+    </section>
+
+    <!-- Another Example GIF -->
+    <div class="gif-container">
+      <img src="https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif" alt="Sleepy cat GIF">
+    </div>
+
+    <section>
+      <h2>5. Cozy Cuddlers</h2>
+      <p>Despite their independent nature, many cats are affectionate with their human family. Their warm presence, soft fur, and gentle purring can be a comforting stress reliever after a long day.</p>
+    </section>
   </main>
+
   <footer>
-    <p>&copy; 2025 Lazy Cat Tales. All rights reserved.</p>
+    &copy; 2025 - Feline Fans
   </footer>
-  <script>
-    // JavaScript to toggle the hidden content
-    document.getElementById('toggleButton').addEventListener('click', function() {
-      var funFact = document.getElementById('funFact');
-      if (funFact.style.display === 'none' || funFact.style.display === '') {
-        funFact.style.display = 'block';
-        this.textContent = 'Hide the Secret about Lazy Cats!';
-      } else {
-        funFact.style.display = 'none';
-        this.textContent = 'Show a Secret about Lazy Cats!';
-      }
-    });
-  </script>
 </body>
 </html>
